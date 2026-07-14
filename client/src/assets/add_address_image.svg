@@ -1,0 +1,70 @@
+<svg width="560" height="420" viewBox="40 10 600 470" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pinGradient" x1="90" y1="40" x2="300" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="var(--color-primary, #65D400)"/>
+      <stop offset="1" stop-color="var(--color-primary-dull, #0B6B2D)"/>
+    </linearGradient>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- map backdrop -->
+  <circle cx="310" cy="220" r="145" stroke="#D8D8D8" stroke-width="2.5"/>
+
+  <!-- map lines -->
+  <path d="M185 130H420" stroke="#3F3D56" stroke-width="3"/>
+  <path d="M185 305H420" stroke="#3F3D56" stroke-width="3"/>
+  <path d="M255 75L210 165" stroke="#3F3D56" stroke-width="3"/>
+  <path d="M225 235L185 305" stroke="#3F3D56" stroke-width="3"/>
+  <path d="M420 130V305" stroke="#3F3D56" stroke-width="3"/>
+  <path d="M315 290H380" stroke="#3F3D56" stroke-width="3"/>
+  <path d="M365 250V325" stroke="#3F3D56" stroke-width="3"/>
+  <path d="M230 235H185" stroke="#3F3D56" stroke-width="3"/>
+  <path d="M295 75H255" stroke="#3F3D56" stroke-width="3"/>
+
+  <!-- big location pin -->
+  <g filter="url(#softShadow)">
+    <path d="M215 15C136 15 75 74 75 149C75 258 215 260 290 348C296 356 307 356 313 348C388 260 355 15 215 15Z" fill="url(#pinGradient)"/>
+    <circle cx="215" cy="108" r="34" fill="white"/>
+    <path d="M93 155C118 206 185 211 255 248C280 261 301 279 313 348C246 286 154 261 106 213C83 190 73 171 73 149C73 137 75 126 79 115C79 127 84 141 93 155Z" fill="var(--color-primary-dull, #0B6B2D)" opacity="0.18"/>
+  </g>
+
+  <!-- address card -->
+  <g filter="url(#softShadow)">
+    <rect x="330" y="300" width="160" height="95" rx="10" fill="#F1F1F1" stroke="#D4D4D4" stroke-width="2"/>
+    <path d="M330 300H490L475 345H345L330 300Z" fill="#CFCFCF"/>
+    <circle cx="410" cy="345" r="10" fill="#3F3D56"/>
+    <rect x="340" y="364" width="52" height="8" rx="4" fill="#BDBDBD"/>
+    <rect x="340" y="378" width="135" height="8" rx="4" fill="#E0E0E0"/>
+  </g>
+
+  <!-- small pin -->
+  <path d="M332 276C320 276 311 285 311 297C311 313 332 329 332 329C332 329 353 313 353 297C353 285 344 276 332 276Z" fill="var(--color-primary, #65D400)"/>
+  <circle cx="332" cy="297" r="6" fill="white"/>
+
+  <!-- person -->
+  <g transform="translate(480 170)">
+    <circle cx="30" cy="32" r="18" fill="#FFB6B6"/>
+    <path d="M18 20C18 9 26 4 36 4C47 4 56 11 56 23V28H50C47 21 41 18 34 18C27 18 22 20 18 24V20Z" fill="#2F2E41"/>
+    <ellipse cx="19" cy="25" rx="8" ry="6" fill="#2F2E41"/>
+    <rect x="25" y="45" width="10" height="10" rx="4" fill="#FFB6B6"/>
+
+    <path d="M22 52C28 46 40 46 48 53L66 66L56 142L18 142L8 76C7 67 12 58 22 52Z" fill="var(--color-primary, #65D400)"/>
+    <path d="M18 62L8 76C7 67 12 58 22 52C28 46 40 46 48 53L50 58C43 57 29 57 18 62Z" fill="var(--color-primary-dull, #0B6B2D)" opacity="0.35"/>
+
+    <path d="M58 84L85 106C90 110 91 118 87 123L68 143C64 147 58 146 55 141C52 137 53 132 57 129L69 117L48 99L58 84Z" fill="#FFB6B6"/>
+    <path d="M47 72L58 84L48 99L36 87L47 72Z" fill="var(--color-primary, #65D400)"/>
+    <path d="M16 84L6 121C4 128 8 135 15 137C21 139 27 135 28 129L34 95L16 84Z" fill="var(--color-primary, #65D400)"/>
+
+    <path d="M22 142H56L61 222L42 222L34 170L28 222H12L16 158L22 142Z" fill="#2F2E41"/>
+    <path d="M42 222L39 250L58 250L54 222H42Z" fill="#2F2E41"/>
+    <path d="M12 222L10 250L28 250L28 222H12Z" fill="#2F2E41"/>
+    <path d="M8 250C8 245 12 241 18 241H28V252H8V250Z" fill="#2F2E41"/>
+    <path d="M38 250C38 245 43 241 49 241H59L66 252H38V250Z" fill="#2F2E41"/>
+  </g>
+
+  <!-- ground -->
+  <path d="M380 470H650" stroke="#CFCFCF" stroke-width="2"/>
+</svg>
